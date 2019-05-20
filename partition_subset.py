@@ -9,6 +9,13 @@ def combinations_iter(lst):
     for i in list(comb):
       total.append(list(i))
   return total
+
+def complement_set(big,small):
+    complement=[]
+    for num in big:
+      if num not in small:
+        complement.append(num)
+    return complement
   
 def subset_partition(master_lst):
     total_pairs=[] #this is the set which main function will act on
